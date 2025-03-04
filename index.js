@@ -4,7 +4,7 @@ const nedb=require('nedb-promises');
 const app = express(); // init app
 const db=nedb.create('myfile.json');
 
-app.use(express.static('public')); // enablle static routing
+app.use(express.static('public')); // enable static routing
 
 // insert and search route
 app.get('/search',(request,response)=>{
